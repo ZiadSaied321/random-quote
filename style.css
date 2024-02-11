@@ -1,0 +1,78 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #00AAFF;
+    overflow: hidden;
+}
+div{
+    height: 100vh;
+    width: 100vw;
+}
+/* Drop animation  */
+.drop{
+    background-color: #00FFFC;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -999;
+    animation: animate 5s linear;
+    transition: all 0.5s ease-in-out;
+}
+
+@keyframes animate {
+
+    0%{
+        opacity: 1;
+        transform: scale(1.25);
+    }
+
+    25%{
+        opacity: 0.5;
+        transform: scale(1.5);
+    }
+    50%{
+        opacity: 0.5;
+        transform: scale(1.75);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(2);
+    }
+}
+
+/* Qute Card styles */
+.quote{
+    width: 50%;
+    margin: auto;
+    padding: 3px;
+    border-radius: 8px;
+    margin-top: 50vh;
+    transform: translate(0px,-50%);
+    background-color:rgba(225,225,225,0.4);
+}
+
+.quote{
+    text-align: center;
+    color: #030637;
+}
+
+h2, h3{
+    line-height:1.6em;
+    color: #720455;
+}
+#btn{
+    font-size:1.2em;
+    border: 2px solid #7204558f;
+    border-radius: 8px;
+    padding:2px;
+    background-color:transparent;
+    color:#7204558f;
+    margin-top:5px;
+    font-weight: bold;
+}
